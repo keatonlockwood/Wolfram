@@ -1,0 +1,604 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src:  url('Avenir Next.ttc') format('ttc'),
+        url('Avenir Next.ttc') format('ttc');
+}
+
+
+body {
+	font-family: 'Avenir Next';
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #7316C9;
+    max-width: 100%;
+}
+
+ul.topnav #header-services {
+	background-color: #ffffff;
+ 	color: #7316C9;
+ 	font-size: 17px;
+ 	font-weight: 400;
+ 	border-radius: 40px;
+ 	border: #ffffff;
+ 	padding: 10px 20px;
+ 	margin-top: 8px;
+ 	margin-left: 40px;
+ 	float: right;
+ 
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ul.topnav li.search-icon {display: inline-block;
+float: right;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav li.search-icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#header-logo {
+	width: 35px;
+}
+
+h1 {
+	font-size: 86px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: bold;
+	color: black;
+}
+
+h3 {
+	font-size: 47px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 24px;
+	
+}
+
+p {
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.header a {
+	color: #ffffff;
+	padding-right: 20px;
+	float: left;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+nav li {
+	display: inline-block;
+	float: left;
+	color: #ffffff;
+}
+
+.header {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: inline-block;
+	background-color: #7316C9;
+	height: 100px;
+  	width: 100%;
+  	position: relative;
+}
+
+.btn {
+	border: none;
+	border-radius: 40px;
+
+}
+
+.btn-primary {
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: #7316C9;
+}
+
+#header-bottom {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#header-bottom-logo {
+	width: 130px;
+	
+}
+
+#header-bottom h2 {
+	font-size: 60px;
+	padding-left: 25px;
+}
+
+#header-bottom h4 {
+	font-size: 20px;
+	padding-left: 25px;
+	padding-top: 5px;
+	color: black;
+}
+
+#header-bottom a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#call-us {
+	background-color: #7316C9;
+	color: #ffffff;
+	margin-top: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 40px;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* When the screen is bigger than 768 pixels wide, hide the CALL US BUTTON */
+@media screen and (min-width:768px) {
+  #call-us {display: none;}
+
+  }
+
+ ul {
+ 	list-style-type: none;
+ }
+
+ #services {
+ 	background-color: #ffffff;
+ 	color: #7316C9;
+ 	font-size: 17px;
+ 	font-weight: 400;
+ 	border-radius: 40px;
+ 	border: #ffffff;
+ 	padding: 20px 40px;
+ 	margin-top: 25px;
+ }
+
+ .hero-image-container {
+  	background:url(../images/hero-image.jpg);
+ 	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+}
+
+.container-hero {
+	padding-top: 200px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#learn-more {
+	margin-top: 20px;
+	border-radius: 40px;
+	border: none;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+	color: #7316C9;
+	font-size: 20px;
+}
+
+.container-hero h4 {
+	padding-top: 10px;
+}
+
+.hero-image {
+  max-width: auto;
+  height: 500px;
+  display: inline-block; 
+  vertical-align: middle; 
+  color: transparent; 
+  background-size: 100%; 
+  background-position: 50% 50%; 
+  background-repeat: no-repeat;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.feature {
+	color: #7316C9;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.feature h3 {
+	padding-left: 15px;
+}
+
+.feature p {
+	padding-left: 15px;
+}
+
+.feature a:hover {
+	color: #7316C9;
+
+}
+
+.col-sm-8 {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.reliable-security {
+	width: 100%;
+	height: 400px;
+	padding: 75px;
+	background-color: #7316C9;
+	color: #ffffff;
+	text-align: center;
+
+}
+
+.keep-in-touch {
+	width: 100%;
+	text-align: center;
+	padding: 70px 0;
+
+}
+
+#feature-meetourteam {
+	background-image: url(../images/meet-our-team.jpg);
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+}
+
+#feature-services {
+	background-image: url(../images/city-feature2.jpg);
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+}
+
+#feature4-1 {
+	background-color: #7316C9;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#feature4-1 p {
+	color: #ffffff;
+}
+
+#feature4-1 a:hover {
+	color: #ffffff;
+}
+
+
+#feature4-2 {
+	background-color: #7316C9;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	opacity: 0.7;
+}
+
+#feature4-2 p {
+	color: #ffffff;
+}
+
+#feature4-2 a:hover {
+	color: #ffffff;
+}
+
+#feature4-3 {
+	background-color: #7316C9;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	opacity: 0.45;
+}
+
+#feature4-3 p {
+	color: #ffffff;
+}
+
+#feature4-3 a:hover {
+	color: #ffffff;
+}
+
+#testimonial {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #312D70;
+	color: #ffffff;
+}
+
+#testimonial h4 {
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+.feature5 {
+	background-color: #312D70;
+}
+
+.newsletter {
+	padding-top: 50px;
+}
+
+input {
+	width: 200px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 40px;
+}
+
+input[type=text] {
+	padding: 10px;
+}
+
+input[type=text]:focus {
+	border: 1px solid #555; 
+}
+
+#subscribe {
+ 	background-color: #7316C9;
+ 	color: #ffffff;
+ 	font-size: 17px;
+ 	font-weight: 400;
+ 	border-radius: 40px;
+ 	border: #ffffff;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	padding-left: 70px;
+ 	padding-right: 70px;
+ 	margin-top: 30px;
+ }
+
+ footer {
+ 	background-color: #7316C9;
+ 	padding: 40px 0;
+ 	width: 100%;
+ }
+
+ .logo-footer {
+ 	width: 100px;
+ 	display: inline-block;
+ }
+
+ .logo-footer:hover {
+ 	text-decoration: none;
+ }
+
+.location-logo {
+	display: inline-block;
+	
+}
+
+ footer h5 {
+ 	color: #ffffff;
+ 	font-weight: 400;
+ 	font-size: 18px;
+ }
+
+
+
+ #footer-call-us {
+ 	background-color: #ffffff;
+	color: #7316C9;
+	margin-top: 30px;
+	padding: 10px 30px;
+	border-radius: 40px;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#social-media {
+	background-color: transparent;
+}
+
+
+
+.about-us {
+	background: #7316C9;
+	color: #ffffff;
+	width: 100%;
+	padding: 40px;
+}
+
+.about-us h2 {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#interior-feature1 {
+	background-image: url(../images/city-interior.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+
+}
+
+#interior-feature1 p {
+	width: 100%;
+	padding-left: 60px;
+	padding-top: 80px;
+	padding-right: 60px;
+	padding-bottom: 100px;
+	background-color: #7316C9;
+	color: #ffffff;
+	margin-top: 300px;
+}
+
+#trophy {
+	padding-top: 150px;
+	padding-left: 40px;
+}
+
+#trophy p {
+	padding-left: 50px;
+	padding-bottom: 50px;
+	display: block;
+}
+.trophy {
+	float: left;
+	display: block;
+	padding-right: 40px;
+	padding-top: 30px;
+}
+
+#house {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#house p {
+	padding-left: ;
+	padding-bottom: 60px;
+	display: block;
+}
+.house {
+	float: left;
+	display: block;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+#village {
+	width: 100%;
+
+}
+
+}
+
+/* CHANGES TO BE MADE WHEN SCREEN IS MAX 768PX */
+
+@media screen and (max-width:768px) {
+  #header-top li:not(:first-child) {display: none;}
+
+  #header-bottom-logo {
+  	width: 50px;
+  }
+  
+  h1 {
+  	font-size: 45px;
+  }
+
+  h2 {
+  	font-size: 30px;
+  }
+
+  h3 {
+  	font-size: 28px;
+  }
+  
+  h4 {
+  	font-size: 22px;
+  }
+  
+  .container-hero {
+  	padding-top: 70px;
+  	height: 300px;
+  }
+
+  .container-hero h4 {
+  	line-height: 40px;
+  	font-size: 18px;
+  }
+
+  .newsletter h3 {
+  	font-size: 40px;
+  	line-height: 60px;
+  }
+
+  p {
+  	font-size: 15px;
+  }
+  
+  #header-bottom h2 {
+  	font-size: 40px;
+  }
+
+  #header-bottom h4 {
+  	display: none;
+  }
+
+  }
+
